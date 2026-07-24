@@ -2,7 +2,7 @@
 build_arch=$1
 frp_version=$2
 
-frp_url="https://github.com/fatedier/frp/releases/download/"
+frp_url="https://ghproxy.net/https://github.com/fatedier/frp/releases/download/" #using ghproxy.net to avoid GFW issues when downloading frp releases from github.com
 app_path="/usr/src"
 
 function select_machine() {
