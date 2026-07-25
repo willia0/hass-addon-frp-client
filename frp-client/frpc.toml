@@ -1,7 +1,7 @@
 serverAddr = "your_server_addr"
 serverPort = 7000
 auth.method = "token"
-auth.user = "admin"
+user = "admin"
 auth.token = "123456789"
 
 log.to = "/share/frpc.log"
@@ -23,8 +23,8 @@ log.maxDays = 3
 [[proxies]]
 name = "your_proxy_name"
 type = "your_proxy_type"
-transport.useEncryption = true
-transport.useCompression = true
+transport.useEncryption = false
+transport.useCompression = false
 localPort = 8123
 localIP = "0.0.0.0"
 remotePort = 8123

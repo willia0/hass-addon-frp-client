@@ -13,7 +13,7 @@ cp $DEFAULT_CONFIG_PATH $CONFIG_PATH
 sed -i "s/serverAddr = \"your_server_addr\"/serverAddr = \"$(bashio::config 'serverAddr')\"/" $CONFIG_PATH
 sed -i "s/serverPort = 7000/serverPort = $(bashio::config 'serverPort')/" $CONFIG_PATH
 sed -i "s/auth.token = \"123456789\"/auth.token = \"$(bashio::config 'authToken')\"/" $CONFIG_PATH
-sed -i "s/auth.user = \"admin\"/auth.user = \"$(bashio::config 'authUser')\"/" $CONFIG_PATH
+sed -i "s/user = \"admin\"/user = \"$(bashio::config 'authUser')\"/" $CONFIG_PATH
 sed -i "s/remotePort = 8123/remotePort = $(bashio::config 'remotePort')/" $CONFIG_PATH
 # sed -i "s/webServer.port = 7500/webServer.port = $(bashio::config 'webServerPort')/" $CONFIG_PATH
 # sed -i "s/webServer.user = \"admin\"/webServer.user = \"$(bashio::config 'webServerUser')\"/" $CONFIG_PATH
