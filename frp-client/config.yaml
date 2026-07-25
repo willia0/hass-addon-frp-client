@@ -21,6 +21,7 @@ arch:
 options:
   serverAddr: "example.com"
   serverPort: 7000
+  authUser: "admin"
   authToken: "123456789"
   remotePort: 8123
   # Deprecated 
@@ -30,12 +31,13 @@ options:
   # webServerPassword: "123456789"
   # customDomain: "example.com"
   # proxyName: "homeassistant"
-  # proxyType: "http"
+  proxyType: "http"
   # ------------
 schema:
   serverAddr: str
   serverPort: int
   authToken: str
+  authUser: str
   remotePort: int
   # Deprecated 
   # ------------
@@ -44,5 +46,6 @@ schema:
   # webServerPassword: str
   # customDomain: str
   # proxyName: str
-  # proxyType: list(http|https)
   # ------------
+  proxyType: list(tcp|http|https)
+ 
